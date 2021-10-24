@@ -43,5 +43,6 @@ C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\bin\Debug\Xamarin.For
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.Logs.resources
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.Users.resources
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.csproj.AssemblyReference.cache
-C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.Menu.resources
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.Profile.resources
+C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.MenuAdmin.resources
+C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.MenuGeneral.resources

@@ -13,6 +13,9 @@ namespace ParcialComputoII
 {
     public partial class Login : Form
     {
+
+        string usuario;
+
         public Login()
         {
             InitializeComponent();
@@ -36,10 +39,7 @@ namespace ParcialComputoII
             this.Hide();
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -66,6 +66,78 @@ namespace ParcialComputoII
             //logs.Show();
             //Users users = new Users();
             //users.Show();
+
+
+        }
+
+        private void mlbVerPassword_Click(object sender, EventArgs e)
+        {
+            txtbPassword.PasswordChar.Equals(false);
+        }
+
+        private void txtbPassword_Click(object sender, EventArgs e)
+        {
+            if (cbPassword.Checked == true)
+            {
+                if (txtbPassword.PasswordChar == '*')
+                {
+                    txtbPassword.PasswordChar = '\0';
+                }
+            }
+            else
+            {
+                txtbPassword.PasswordChar = '*';
+            }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Clases.Account account = new Clases.Account();
+            account._username = txtbUsername.Text;
+            account._password = txtbPassword.Text;
+
+            if (account.Login() == true)
+            {
+                if (txtbUsername.Text == "ADMIN")
+                {
+                    account.insertLog();
+                    MenuAdmin admin = new MenuAdmin();
+                    admin.Show();
+                    this.Hide();
+                }
+                else if (txtbUsername.Text != "ADMIN")
+                {
+                    account.insertLog();
+                    MenuGeneral menuGeneral = new MenuGeneral();
+                    menuGeneral.Show();
+                    this.Hide();
+
+
+                }
+            }
+            else if (account.Login() == false)
+            {
+
+            }
+            else
+            {
+
+            }
+
+        }
+
+        public string Usuario()
+        {
+            usuario = txtbUsername.Text;
+
+            return usuario;
+
+        }
+
+        
+
+        private void Login_Load(object sender, EventArgs e)
+        {
 
         }
     }

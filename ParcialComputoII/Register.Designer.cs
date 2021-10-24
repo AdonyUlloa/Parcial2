@@ -304,7 +304,7 @@ namespace ParcialComputoII
             this.txtPasseword.Location = new System.Drawing.Point(59, 331);
             this.txtPasseword.MaxLength = 32767;
             this.txtPasseword.Name = "txtPasseword";
-            this.txtPasseword.PasswordChar = '\0';
+            this.txtPasseword.PasswordChar = '*';
             this.txtPasseword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPasseword.SelectedText = "";
             this.txtPasseword.SelectionLength = 0;
@@ -335,7 +335,7 @@ namespace ParcialComputoII
             this.txtConfirmPassword.Location = new System.Drawing.Point(59, 389);
             this.txtConfirmPassword.MaxLength = 32767;
             this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.PasswordChar = '\0';
+            this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtConfirmPassword.SelectedText = "";
             this.txtConfirmPassword.SelectionLength = 0;

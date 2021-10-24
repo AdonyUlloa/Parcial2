@@ -29,43 +29,43 @@ namespace ParcialComputoII
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dtgDog = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dtgUsuarios = new System.Windows.Forms.DataGridView();
             this.mlbLogin = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtgDog
+            // dtgUsuarios
             // 
-            this.dtgDog.AllowUserToAddRows = false;
-            this.dtgDog.AllowUserToDeleteRows = false;
-            this.dtgDog.AllowUserToResizeColumns = false;
-            this.dtgDog.AllowUserToResizeRows = false;
-            this.dtgDog.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgDog.BackgroundColor = System.Drawing.Color.White;
-            this.dtgDog.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgDog.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgDog.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgDog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDog.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtgDog.Location = new System.Drawing.Point(68, 66);
-            this.dtgDog.MultiSelect = false;
-            this.dtgDog.Name = "dtgDog";
-            this.dtgDog.ReadOnly = true;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgDog.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgDog.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDog.Size = new System.Drawing.Size(589, 263);
-            this.dtgDog.TabIndex = 33;
+            this.dtgUsuarios.AllowUserToAddRows = false;
+            this.dtgUsuarios.AllowUserToDeleteRows = false;
+            this.dtgUsuarios.AllowUserToResizeColumns = false;
+            this.dtgUsuarios.AllowUserToResizeRows = false;
+            this.dtgUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgUsuarios.BackgroundColor = System.Drawing.Color.White;
+            this.dtgUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgUsuarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtgUsuarios.Location = new System.Drawing.Point(68, 66);
+            this.dtgUsuarios.MultiSelect = false;
+            this.dtgUsuarios.Name = "dtgUsuarios";
+            this.dtgUsuarios.ReadOnly = true;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgUsuarios.Size = new System.Drawing.Size(722, 263);
+            this.dtgUsuarios.TabIndex = 33;
             // 
             // mlbLogin
             // 
@@ -85,34 +85,36 @@ namespace ParcialComputoII
             // 
             this.metroButton1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton1.Location = new System.Drawing.Point(691, 1);
+            this.metroButton1.Location = new System.Drawing.Point(804, 1);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(34, 22);
             this.metroButton1.TabIndex = 86;
             this.metroButton1.Text = "X";
             this.metroButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(726, 386);
+            this.ClientSize = new System.Drawing.Size(840, 386);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.mlbLogin);
-            this.Controls.Add(this.dtgDog);
+            this.Controls.Add(this.dtgUsuarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Users";
             this.Text = "Users";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDog)).EndInit();
+            this.Load += new System.EventHandler(this.Users_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgDog;
+        private System.Windows.Forms.DataGridView dtgUsuarios;
         private MetroFramework.Controls.MetroLabel mlbLogin;
         private MetroFramework.Controls.MetroButton metroButton1;
     }

@@ -17,6 +17,7 @@ namespace ParcialComputoII.Clases
         {
             MySqlDataReader dataReader;
 
+            
             //utilizar command de la clase Connection
             conn.command = new MySqlCommand(query, conn.openConnection()); //prepara la consulta
             dataReader = conn.command.ExecuteReader(); //ejecuta la consulta
@@ -26,6 +27,7 @@ namespace ParcialComputoII.Clases
         //metodo que permitira ejecutar las consultas para insertar. editar y eliminar
         public void executeQuery(string query)
         {
+            conn.closeConnection();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             conn.command = new MySqlCommand(query, conn.openConnection());
             adapter.InsertCommand = conn.command;

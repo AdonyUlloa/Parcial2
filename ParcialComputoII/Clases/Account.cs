@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace ParcialComputoII.Clases
 {
@@ -11,7 +12,7 @@ namespace ParcialComputoII.Clases
     {
 
         Connection Connection = new Connection();
-        private Crud crud = new Crud();
+        Crud crud = new Crud();
 
         public int _codUser { get; set; }
         public string _firstname { get; set; }
@@ -46,7 +47,7 @@ namespace ParcialComputoII.Clases
 
         public Boolean Login()
         {
-            string query = "SELECT * FROM accoun WHERE username= '"+_username+ "'AND password= '"+_password+"'";
+            string query = "SELECT * FROM accoun WHERE username = '"+_username+ "'AND password= '"+_password+"'";
             if (crud.select(query).HasRows)
             {
                 return true;
@@ -57,9 +58,14 @@ namespace ParcialComputoII.Clases
 
         public void insertLog()
         {
+            string insertLog = "INSERT INTO userlog(username, timeLoggedin) VALUES('" + _username + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "')"; 
+            crud.executeQuery(insertLog);
+        }
 
-            string insertlog = "INSERT INTO userlog (username, timeLoggedin) VALUES('" + _username + "'" + DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss") + "')"; 
-            crud.executeQuery(insertlog);
+        public MySqlDataReader getByID()
+        {
+            string query = "SELECT * from accoun WHERE username'" + _username + "'";
+            return crud.select(query);
         }
 
         public MySqlDataReader getLog()
@@ -70,7 +76,20 @@ namespace ParcialComputoII.Clases
 
         public MySqlDataReader getLogWithoutAdmin()
         {
-            string query = "SELECT * from userlog WHERE username <> 'admin' ";
+            string query = "SELECT * from userlog WHERE username <> 'ADMIN' ";
+
+            return crud.select(query);
+        }
+
+        public MySqlDataReader getAllLogs()
+        {
+            string query = "SELECT codLog, username, timeLoggedin FROM userlog";
+            return crud.select(query);
+        }
+
+        public MySqlDataReader getAllUsers()
+        {
+            string query = "SELECT * FROM accoun";
 
             return crud.select(query);
         }

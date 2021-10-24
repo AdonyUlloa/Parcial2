@@ -36,7 +36,7 @@ namespace ParcialComputoII
                 account._firstname = txtFistName.Text;
                 account._lastname = txtLastName.Text;
                 account._email = txtEmail.Text;
-                account._registerdate = DateTime.Now.ToString("dd-MM-yyyy");
+                account._registerdate = DateTime.Now.ToString("yyyy-MM-dd");
                 account._username = txtUserName.Text;
                 account._password = txtPasseword.Text;
                 account.registerAccount();

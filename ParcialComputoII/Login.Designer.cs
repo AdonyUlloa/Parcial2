@@ -33,12 +33,15 @@ namespace ParcialComputoII
             this.mlbLogin = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.btnLogin = new MetroFramework.Controls.MetroButton();
             this.txtbUsername = new MetroFramework.Controls.MetroTextBox();
             this.txtbPassword = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.mlbSignUp = new MetroFramework.Controls.MetroLabel();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbPassword = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -63,19 +66,20 @@ namespace ParcialComputoII
             this.mlbLogin.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.mlbLogin.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.mlbLogin.ForeColor = System.Drawing.Color.Transparent;
-            this.mlbLogin.Location = new System.Drawing.Point(12, 21);
+            this.mlbLogin.Location = new System.Drawing.Point(12, 9);
             this.mlbLogin.Name = "mlbLogin";
-            this.mlbLogin.Size = new System.Drawing.Size(107, 30);
+            this.mlbLogin.Size = new System.Drawing.Size(107, 27);
             this.mlbLogin.Style = MetroFramework.MetroColorStyle.Orange;
             this.mlbLogin.TabIndex = 81;
             this.mlbLogin.Text = "Login Form";
             this.mlbLogin.UseCustomBackColor = true;
+            this.mlbLogin.Visible = false;
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(42, 139);
+            this.metroLabel1.Location = new System.Drawing.Point(42, 164);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(74, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Teal;
@@ -88,7 +92,7 @@ namespace ParcialComputoII
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(42, 221);
+            this.metroLabel2.Location = new System.Drawing.Point(42, 246);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(70, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Teal;
@@ -97,20 +101,20 @@ namespace ParcialComputoII
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroButton2
+            // btnLogin
             // 
-            this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.metroButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.metroButton2.Location = new System.Drawing.Point(42, 326);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(244, 35);
-            this.metroButton2.Style = MetroFramework.MetroColorStyle.White;
-            this.metroButton2.TabIndex = 85;
-            this.metroButton2.Text = "Login";
-            this.metroButton2.UseCustomBackColor = true;
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.UseStyleColors = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnLogin.ForeColor = System.Drawing.Color.Transparent;
+            this.btnLogin.Location = new System.Drawing.Point(43, 326);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(244, 35);
+            this.btnLogin.Style = MetroFramework.MetroColorStyle.White;
+            this.btnLogin.TabIndex = 85;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseCustomBackColor = true;
+            this.btnLogin.UseSelectable = true;
+            this.btnLogin.UseStyleColors = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtbUsername
             // 
@@ -128,7 +132,7 @@ namespace ParcialComputoII
             this.txtbUsername.CustomButton.Visible = false;
             this.txtbUsername.DisplayIcon = true;
             this.txtbUsername.Lines = new string[0];
-            this.txtbUsername.Location = new System.Drawing.Point(118, 139);
+            this.txtbUsername.Location = new System.Drawing.Point(118, 164);
             this.txtbUsername.MaxLength = 32767;
             this.txtbUsername.Name = "txtbUsername";
             this.txtbUsername.PasswordChar = '\0';
@@ -158,10 +162,10 @@ namespace ParcialComputoII
             this.txtbPassword.CustomButton.UseSelectable = true;
             this.txtbPassword.CustomButton.Visible = false;
             this.txtbPassword.Lines = new string[0];
-            this.txtbPassword.Location = new System.Drawing.Point(118, 221);
+            this.txtbPassword.Location = new System.Drawing.Point(118, 246);
             this.txtbPassword.MaxLength = 32767;
             this.txtbPassword.Name = "txtbPassword";
-            this.txtbPassword.PasswordChar = '\0';
+            this.txtbPassword.PasswordChar = '*';
             this.txtbPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtbPassword.SelectedText = "";
             this.txtbPassword.SelectionLength = 0;
@@ -172,6 +176,7 @@ namespace ParcialComputoII
             this.txtbPassword.UseSelectable = true;
             this.txtbPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtbPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtbPassword.Click += new System.EventHandler(this.txtbPassword_Click);
             // 
             // metroLabel3
             // 
@@ -202,13 +207,33 @@ namespace ParcialComputoII
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(235, 443);
+            this.button1.Location = new System.Drawing.Point(256, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 90;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ParcialComputoII.Properties.Resources.perfil;
+            this.pictureBox1.Location = new System.Drawing.Point(108, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 113);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 92;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cbPassword
+            // 
+            this.cbPassword.AutoSize = true;
+            this.cbPassword.Location = new System.Drawing.Point(189, 275);
+            this.cbPassword.Name = "cbPassword";
+            this.cbPassword.Size = new System.Drawing.Size(98, 17);
+            this.cbPassword.TabIndex = 93;
+            this.cbPassword.Text = "Ver contraseña";
+            this.cbPassword.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
@@ -218,12 +243,14 @@ namespace ParcialComputoII
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(331, 516);
+            this.Controls.Add(this.cbPassword);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.mlbSignUp);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.txtbPassword);
             this.Controls.Add(this.txtbUsername);
-            this.Controls.Add(this.metroButton2);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.mlbLogin);
             this.Controls.Add(this.metroLabel1);
@@ -238,6 +265,8 @@ namespace ParcialComputoII
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,12 +278,14 @@ namespace ParcialComputoII
         private MetroFramework.Controls.MetroLabel mlbLogin;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        public MetroFramework.Controls.MetroButton metroButton2;
+        public MetroFramework.Controls.MetroButton btnLogin;
         private MetroFramework.Controls.MetroTextBox txtbUsername;
         private MetroFramework.Controls.MetroTextBox txtbPassword;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel mlbSignUp;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox cbPassword;
     }
 }
 
