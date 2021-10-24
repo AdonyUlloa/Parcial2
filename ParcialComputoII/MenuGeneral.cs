@@ -17,12 +17,6 @@ namespace ParcialComputoII
             InitializeComponent();
         }
 
-        private void tilePerfil_Click(object sender, EventArgs e)
-        {
-            Profile profile = new Profile();
-            profile.Show();
-        }
-
         private void tileRegistros_Click(object sender, EventArgs e)
         {
             Logs logs = new Logs();
@@ -35,5 +29,13 @@ namespace ParcialComputoII
             login.Show();
             this.Hide();
         }
+
+        private void tilePerfil_Click(object sender, EventArgs e)
+        {
+            Profile profile = new Profile();
+            profile.Show();
+        }
+    
+    
     }
 }

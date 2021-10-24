@@ -29,8 +29,8 @@ namespace ParcialComputoII
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mlbLogin = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.dtgLogs = new System.Windows.Forms.DataGridView();
@@ -43,7 +43,7 @@ namespace ParcialComputoII
             this.mlbLogin.BackColor = System.Drawing.Color.Transparent;
             this.mlbLogin.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.mlbLogin.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.mlbLogin.ForeColor = System.Drawing.Color.Transparent;
+            this.mlbLogin.ForeColor = System.Drawing.Color.Black;
             this.mlbLogin.Location = new System.Drawing.Point(12, 9);
             this.mlbLogin.Name = "mlbLogin";
             this.mlbLogin.Size = new System.Drawing.Size(55, 30);
@@ -51,6 +51,7 @@ namespace ParcialComputoII
             this.mlbLogin.TabIndex = 82;
             this.mlbLogin.Text = "Logs";
             this.mlbLogin.UseCustomBackColor = true;
+            this.mlbLogin.UseCustomForeColor = true;
             // 
             // metroButton1
             // 
@@ -75,30 +76,31 @@ namespace ParcialComputoII
             this.dtgLogs.BackgroundColor = System.Drawing.Color.White;
             this.dtgLogs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgLogs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgLogs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgLogs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgLogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgLogs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtgLogs.Location = new System.Drawing.Point(69, 80);
             this.dtgLogs.MultiSelect = false;
             this.dtgLogs.Name = "dtgLogs";
             this.dtgLogs.ReadOnly = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgLogs.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgLogs.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgLogs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgLogs.Size = new System.Drawing.Size(661, 263);
             this.dtgLogs.TabIndex = 86;
-           
             // 
             // rjToggleButton1
             // 
             this.rjToggleButton1.AutoSize = true;
+            this.rjToggleButton1.Checked = true;
+            this.rjToggleButton1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.rjToggleButton1.Location = new System.Drawing.Point(733, 416);
             this.rjToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
             this.rjToggleButton1.Name = "rjToggleButton1";
@@ -109,6 +111,7 @@ namespace ParcialComputoII
             this.rjToggleButton1.Size = new System.Drawing.Size(45, 22);
             this.rjToggleButton1.TabIndex = 84;
             this.rjToggleButton1.UseVisualStyleBackColor = true;
+            this.rjToggleButton1.UseWaitCursor = true;
             this.rjToggleButton1.CheckedChanged += new System.EventHandler(this.rjToggleButton1_CheckedChanged);
             // 
             // Logs

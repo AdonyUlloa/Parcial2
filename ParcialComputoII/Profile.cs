@@ -25,11 +25,9 @@ namespace ParcialComputoII
         {
 
             fillDataGridView();
-            Login login = new Login();
+            /*Login login = new Login()*/;
 
-            label1.Text = login.Usuario();
-
-            //label1.Text = dtgPerfil.CurrentRow.Cells[5].Value.ToString();
+            label1.Text = dtgPerfil.CurrentRow.Cells[5].Value.ToString();
             label2.Text = dtgPerfil.CurrentRow.Cells[3].Value.ToString();
             label3.Text = dtgPerfil.CurrentRow.Cells[4].Value.ToString();
 

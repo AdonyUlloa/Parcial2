@@ -45,4 +45,9 @@ C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComp
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.csproj.AssemblyReference.cache
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.Profile.resources
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.MenuAdmin.resources
+C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.Trabajos.resources
+C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\bin\Debug\Geckofx-Core.dll
+C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\bin\Debug\Geckofx-Winforms.dll
+C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\bin\Debug\Geckofx-Core.pdb
+C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\bin\Debug\Geckofx-Winforms.pdb
 C:\Users\PC\source\repos\ParcialComputoII\ParcialComputoII\obj\Debug\ParcialComputoII.MenuGeneral.resources

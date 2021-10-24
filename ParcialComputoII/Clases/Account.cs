@@ -29,14 +29,7 @@ namespace ParcialComputoII.Clases
             string query = "SELECT * from accoun WHERE codUser<>1";
             return crud.select(query);
         }
-        //public MySqlDataReader getAllUserLogs()
-        //{
-        //    string query = "SELECT codLog, username, timeLoggedin FROM userlog ";
-
-        //    return crud.select(query);
-        //}
-
-        
+   
         public Boolean registerAccount()
         {
             string query = "INSERT INTO accoun(firstname, lastname, email, registerDate, username, password)" +
@@ -62,25 +55,13 @@ namespace ParcialComputoII.Clases
             crud.executeQuery(insertLog);
         }
 
-        public MySqlDataReader getByID()
-        {
-            string query = "SELECT * from accoun WHERE username'" + _username + "'";
-            return crud.select(query);
-        }
-
         public MySqlDataReader getLog()
         {
             string query = "SELECT * from userlog";
             return crud.select(query);
         }
 
-        public MySqlDataReader getLogWithoutAdmin()
-        {
-            string query = "SELECT * from userlog WHERE username <> 'ADMIN' ";
-
-            return crud.select(query);
-        }
-
+  
         public MySqlDataReader getAllLogs()
         {
             string query = "SELECT codLog, username, timeLoggedin FROM userlog";
@@ -93,5 +74,8 @@ namespace ParcialComputoII.Clases
 
             return crud.select(query);
         }
+
+        
+
     }
 }

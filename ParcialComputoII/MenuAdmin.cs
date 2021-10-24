@@ -48,6 +48,18 @@ namespace ParcialComputoII
             Profile profile = new Profile();
             profile.Show();
         }
+
+        private void tileTrabajos_Click(object sender, EventArgs e)
+        {
+            Trabajos trabajos = new Trabajos();
+            trabajos.Show();
+        }
+
+        private void tilePerfil_Click_1(object sender, EventArgs e)
+        {
+            Profile profile = new Profile();
+            profile.Show();
+        }
     }
 
     

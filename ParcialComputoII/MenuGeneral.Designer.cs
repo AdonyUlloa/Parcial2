@@ -29,37 +29,34 @@ namespace ParcialComputoII
         /// </summary>
         private void InitializeComponent()
         {
-            this.tileRegistros = new MetroFramework.Controls.MetroTile();
-            this.tilePerfil = new MetroFramework.Controls.MetroTile();
             this.mlbLogin = new MetroFramework.Controls.MetroLabel();
+            this.tilePerfil = new MetroFramework.Controls.MetroTile();
+            this.tileRegistros = new MetroFramework.Controls.MetroTile();
             this.btnCerrarSesion = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
-            // tileRegistros
+            // mlbLogin
             // 
-            this.tileRegistros.ActiveControl = null;
-            this.tileRegistros.ForeColor = System.Drawing.Color.Black;
-            this.tileRegistros.Location = new System.Drawing.Point(199, 128);
-            this.tileRegistros.Name = "tileRegistros";
-            this.tileRegistros.Size = new System.Drawing.Size(98, 99);
-            this.tileRegistros.TabIndex = 88;
-            this.tileRegistros.Text = "REGISTROS";
-            this.tileRegistros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.tileRegistros.TileImage = global::ParcialComputoII.Properties.Resources.registrado;
-            this.tileRegistros.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.tileRegistros.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.tileRegistros.UseSelectable = true;
-            this.tileRegistros.UseTileImage = true;
-            this.tileRegistros.Click += new System.EventHandler(this.tileRegistros_Click);
+            this.mlbLogin.BackColor = System.Drawing.Color.Transparent;
+            this.mlbLogin.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.mlbLogin.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.mlbLogin.ForeColor = System.Drawing.Color.Transparent;
+            this.mlbLogin.Location = new System.Drawing.Point(198, 99);
+            this.mlbLogin.Name = "mlbLogin";
+            this.mlbLogin.Size = new System.Drawing.Size(155, 27);
+            this.mlbLogin.Style = MetroFramework.MetroColorStyle.Orange;
+            this.mlbLogin.TabIndex = 83;
+            this.mlbLogin.Text = "MENU USUARIO";
+            this.mlbLogin.UseCustomBackColor = true;
             // 
             // tilePerfil
             // 
             this.tilePerfil.ActiveControl = null;
             this.tilePerfil.ForeColor = System.Drawing.Color.Black;
-            this.tilePerfil.Location = new System.Drawing.Point(66, 128);
+            this.tilePerfil.Location = new System.Drawing.Point(165, 187);
             this.tilePerfil.Name = "tilePerfil";
             this.tilePerfil.Size = new System.Drawing.Size(98, 99);
-            this.tilePerfil.TabIndex = 87;
+            this.tilePerfil.TabIndex = 84;
             this.tilePerfil.Text = "PERFIL";
             this.tilePerfil.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tilePerfil.TileImage = global::ParcialComputoII.Properties.Resources.perfil__4_;
@@ -69,20 +66,22 @@ namespace ParcialComputoII
             this.tilePerfil.UseTileImage = true;
             this.tilePerfil.Click += new System.EventHandler(this.tilePerfil_Click);
             // 
-            // mlbLogin
+            // tileRegistros
             // 
-            this.mlbLogin.BackColor = System.Drawing.Color.Transparent;
-            this.mlbLogin.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.mlbLogin.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.mlbLogin.ForeColor = System.Drawing.Color.Transparent;
-            this.mlbLogin.Location = new System.Drawing.Point(66, 63);
-            this.mlbLogin.Name = "mlbLogin";
-            this.mlbLogin.Size = new System.Drawing.Size(231, 27);
-            this.mlbLogin.Style = MetroFramework.MetroColorStyle.Orange;
-            this.mlbLogin.TabIndex = 86;
-            this.mlbLogin.Text = "MENU ADMINISTRATIVO";
-            this.mlbLogin.UseCustomBackColor = true;
-            this.mlbLogin.Visible = false;
+            this.tileRegistros.ActiveControl = null;
+            this.tileRegistros.ForeColor = System.Drawing.Color.Black;
+            this.tileRegistros.Location = new System.Drawing.Point(303, 187);
+            this.tileRegistros.Name = "tileRegistros";
+            this.tileRegistros.Size = new System.Drawing.Size(98, 99);
+            this.tileRegistros.TabIndex = 86;
+            this.tileRegistros.Text = "REGISTROS";
+            this.tileRegistros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tileRegistros.TileImage = global::ParcialComputoII.Properties.Resources.registrado;
+            this.tileRegistros.TileImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tileRegistros.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.tileRegistros.UseSelectable = true;
+            this.tileRegistros.UseTileImage = true;
+            this.tileRegistros.Click += new System.EventHandler(this.tileRegistros_Click);
             // 
             // btnCerrarSesion
             // 
@@ -91,10 +90,10 @@ namespace ParcialComputoII
             this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(338, 290);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(528, 376);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(38, 44);
-            this.btnCerrarSesion.TabIndex = 89;
+            this.btnCerrarSesion.TabIndex = 88;
             this.btnCerrarSesion.UseSelectable = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
@@ -102,7 +101,7 @@ namespace ParcialComputoII
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 346);
+            this.ClientSize = new System.Drawing.Size(578, 432);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.tileRegistros);
             this.Controls.Add(this.tilePerfil);
@@ -117,9 +116,9 @@ namespace ParcialComputoII
 
         #endregion
 
-        private MetroFramework.Controls.MetroTile tileRegistros;
-        private MetroFramework.Controls.MetroTile tilePerfil;
         private MetroFramework.Controls.MetroLabel mlbLogin;
+        private MetroFramework.Controls.MetroTile tilePerfil;
+        private MetroFramework.Controls.MetroTile tileRegistros;
         private MetroFramework.Controls.MetroButton btnCerrarSesion;
     }
 }

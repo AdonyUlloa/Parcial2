@@ -50,7 +50,6 @@ namespace ParcialComputoII
             this.mlbLogin.TabIndex = 82;
             this.mlbLogin.Text = "MENU ADMINISTRATIVO";
             this.mlbLogin.UseCustomBackColor = true;
-            this.mlbLogin.Visible = false;
             // 
             // btnCerrarSesion
             // 
@@ -59,7 +58,7 @@ namespace ParcialComputoII
             this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(522, 451);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(541, 477);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(38, 44);
             this.btnCerrarSesion.TabIndex = 87;
@@ -81,6 +80,7 @@ namespace ParcialComputoII
             this.tileTrabajos.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.tileTrabajos.UseSelectable = true;
             this.tileTrabajos.UseTileImage = true;
+            this.tileTrabajos.Click += new System.EventHandler(this.tileTrabajos_Click);
             // 
             // tileRegistros
             // 
@@ -131,13 +131,13 @@ namespace ParcialComputoII
             this.tilePerfil.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.tilePerfil.UseSelectable = true;
             this.tilePerfil.UseTileImage = true;
-            this.tilePerfil.Click += new System.EventHandler(this.tilePerfil_Click);
+            this.tilePerfil.Click += new System.EventHandler(this.tilePerfil_Click_1);
             // 
             // MenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 519);
+            this.ClientSize = new System.Drawing.Size(591, 533);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.tileTrabajos);
             this.Controls.Add(this.tileRegistros);

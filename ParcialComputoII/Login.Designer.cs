@@ -38,7 +38,6 @@ namespace ParcialComputoII
             this.txtbPassword = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.mlbSignUp = new MetroFramework.Controls.MetroLabel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbPassword = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -205,16 +204,6 @@ namespace ParcialComputoII
             this.mlbSignUp.Theme = MetroFramework.MetroThemeStyle.Light;
             this.mlbSignUp.Click += new System.EventHandler(this.mlbSign_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(256, 452);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 90;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ParcialComputoII.Properties.Resources.perfil;
@@ -230,9 +219,9 @@ namespace ParcialComputoII
             this.cbPassword.AutoSize = true;
             this.cbPassword.Location = new System.Drawing.Point(189, 275);
             this.cbPassword.Name = "cbPassword";
-            this.cbPassword.Size = new System.Drawing.Size(98, 17);
+            this.cbPassword.Size = new System.Drawing.Size(101, 17);
             this.cbPassword.TabIndex = 93;
-            this.cbPassword.Text = "Ver contraseña";
+            this.cbPassword.Text = "Show password";
             this.cbPassword.UseVisualStyleBackColor = true;
             // 
             // Login
@@ -245,7 +234,6 @@ namespace ParcialComputoII
             this.ClientSize = new System.Drawing.Size(331, 516);
             this.Controls.Add(this.cbPassword);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.mlbSignUp);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.txtbPassword);
@@ -279,13 +267,12 @@ namespace ParcialComputoII
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         public MetroFramework.Controls.MetroButton btnLogin;
-        private MetroFramework.Controls.MetroTextBox txtbUsername;
         private MetroFramework.Controls.MetroTextBox txtbPassword;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel mlbSignUp;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox cbPassword;
+        public MetroFramework.Controls.MetroTextBox txtbUsername;
     }
 }
 

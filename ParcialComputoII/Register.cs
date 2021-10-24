@@ -28,7 +28,7 @@ namespace ParcialComputoII
             ValidacionTextBox();
             if (txtPasseword.Text != txtConfirmPassword.Text)
             {
-                MetroFramework.MetroMessageBox.Show(this, "Contrasela no conincide", "New Account", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this, "Contraseña no conincide", "New Account", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

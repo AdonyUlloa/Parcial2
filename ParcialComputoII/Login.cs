@@ -14,14 +14,11 @@ namespace ParcialComputoII
     public partial class Login : Form
     {
 
-        string usuario;
 
         public Login()
         {
             InitializeComponent();
         }
-
-
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -37,37 +34,6 @@ namespace ParcialComputoII
             Register register = new Register();
             register.Show();
             this.Hide();
-        }
-
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            //string connectionString = "";
-            //MySqlConnection conn;
-
-            //try
-            //{
-            //    connectionString = @"Server=localhost;Database=parcialii;Uid=root;Pwd=usbw;SSL Mode=None";
-            //    conn = new MySqlConnection(connectionString);
-            //    conn.Open();
-            //    //MessageBox.Show("Se establecio conexión correctamente");
-            //    MetroFramework.MetroMessageBox.Show(this, "conexion exitosa", "mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    conn.Close();
-            //}
-            //catch (Exception Ex)
-            //{
-            //    //MessageBox.Show(Ex.Message);
-            //    MetroFramework.MetroMessageBox.Show(this, Ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
-
-            //Logs logs = new Logs();
-            //logs.Show();
-            //Users users = new Users();
-            //users.Show();
-
-
         }
 
         private void mlbVerPassword_Click(object sender, EventArgs e)
@@ -92,6 +58,7 @@ namespace ParcialComputoII
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            
             Clases.Account account = new Clases.Account();
             account._username = txtbUsername.Text;
             account._password = txtbPassword.Text;
@@ -101,44 +68,33 @@ namespace ParcialComputoII
                 if (txtbUsername.Text == "ADMIN")
                 {
                     account.insertLog();
+
                     MenuAdmin admin = new MenuAdmin();
                     admin.Show();
                     this.Hide();
                 }
                 else if (txtbUsername.Text != "ADMIN")
                 {
+                    MetroFramework.MetroMessageBox.Show(this,
+                 "Bienvenido "+ txtbUsername.Text , "SESIÓN INICIADA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     account.insertLog();
                     MenuGeneral menuGeneral = new MenuGeneral();
-                    menuGeneral.Show();
+                    menuGeneral.Show();  
                     this.Hide();
-
-
                 }
-            }
-            else if (account.Login() == false)
-            {
-
             }
             else
             {
-
+                MetroFramework.MetroMessageBox.Show(this, "Contraseña_usuario no son correctos o no está registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
-
-        public string Usuario()
-        {
-            usuario = txtbUsername.Text;
-
-            return usuario;
-
-        }
-
-        
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            MetroFramework.MetroMessageBox.Show(this,
+                  "UGB", "BIENVENIDO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }

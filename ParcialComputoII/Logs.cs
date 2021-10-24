@@ -34,7 +34,6 @@ namespace ParcialComputoII
             dtgLogs.Columns.Add("timeLoggedin", "Hora de inicio de sesión");
 
             MySqlDataReader dataReader = account.getAllLogs();
-
             while (dataReader.Read())
             {
                 dtgLogs.Rows.Add(
@@ -43,8 +42,6 @@ namespace ParcialComputoII
                     dataReader.GetValue(2)
                     );
             }
-
-
         }
 
         public void clearDataGridView()
@@ -60,7 +57,6 @@ namespace ParcialComputoII
 
         private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
         {
-            
         }
 
         
